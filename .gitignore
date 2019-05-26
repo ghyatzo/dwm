@@ -1,3 +1,6 @@
 patches/
 *.1
-
+pkg/
+*.o
+*.tar.xz
+dwm
