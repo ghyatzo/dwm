@@ -3,3 +3,4 @@ pkg/
 *.o
 *.tar.xz
 dwm
+PKGBUILD
