@@ -1,6 +1,6 @@
 pkgname=dwm-custom-git
 _pkgname=dwm
-pkgver=6.2.4.ge333253
+pkgver=6.2.5.g4db3c95
 pkgrel=1
 pkgdesc="A dynamic window manager for X; my costom build"
 url="http://dwm.suckless.org"
