@@ -972,7 +972,7 @@ grabkeys(void)
 char*
 help(void)
 {
-	return "usage: dwm [-hv] [-fn font] [-nb color] [-nf color] [-sb color] [-sf color]\n[-df font] [-dnf color] [-dnb color] [-dsf color] [-dsb color]\n";
+	return "usage: dwm [-hv] [-fn font] [-nb color] [-nf color] [-bn color] [-sb color] [-sf color] [-bs color]\n[-df font] [-dnf color] [-dnb color] [-dsf color] [-dsb color]\n";
 }
 
 void
@@ -2160,10 +2160,14 @@ main(int argc, char *argv[])
 			colors[SchemeNorm][1] = argv[++i];
 		else if (!strcmp("-nf",argv[i])) /* normal foreground color */
 			colors[SchemeNorm][0] = argv[++i];
+		else if (!strcmp("-bn",argv[i])) /* normal border color */
+			colors[SchemeNorm][2] = argv[++i];
 		else if (!strcmp("-sb",argv[i])) /* selected background color */
 			colors[SchemeSel][1] = argv[++i];
 		else if (!strcmp("-sf",argv[i])) /* selected foreground color */
 			colors[SchemeSel][0] = argv[++i];
+		else if (!strcmp("-bs",argv[i])) /* selected border color */
+			colors[SchemeSel][2] = argv[++i];
 		else if (!strcmp("-df", argv[i])) /* dmenu font */
 			dmenucmd[4] = argv[++i];
 		else if (!strcmp("-dnb",argv[i])) /* dmenu normal background color */
